@@ -8,25 +8,19 @@
 
 <head>
     <!-- Origem da fonte: -->
-    <script src="https://c.webfontfree.com/c.js?f=MinecraftTen" type="text/javascript"></script>
-    <link href="https://fonts.cdnfonts.com/css/minecraft-3" rel="stylesheet">
-
+    <link href="https://db.onlinewebfonts.com/c/a7fcb1becc12274d5b761b1d895f8aa9?family=Minecraft+Ten" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-3?styles=41305" rel="stylesheet">
+    
     <!-- Aparência/CSS: -->
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Minecraft", sans-serif;
             margin: 0px;
             padding: 0px;
             text-align: center;
             font-size: 1.5em;
-            background-color: white;
         }
         header {
-            font-family: "MinecraftTen", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
-            font-style: normal;
-            font-size: 1.3em;
             padding: 10px 20px;
             background-color: salmon;
             color: white;
@@ -34,16 +28,46 @@
         section {
             margin: 20px;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 25px;
             background-color: rgb(252, 234, 234);
+            margin: 50px 20% 50px;
+            text-align: center;
+        }
+        h1 {
+            font-family: "Minecraft Ten";
+            font-size: 2.3em;
+            padding: 10px 20px;
+            background-color: salmon;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            color: white;
+            text-align: center;
         }
         h2 {
-            font-family: "Minecraft", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: weight;
-            font-style: normal;
-            font-size: 1.5em;
+            font-family: "Minecraft Ten";
+            font-size: 1.2em;
+            text-align: center;
             text-decoration: underline;
+        }
+        footer {
+            font-family: "Minecraft", sans-serif;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+        input {
+            font-family: "Minecraft", sans-serif;
+            margin: 5px;
+            padding: 0px 20px;
+            font-size: 1em;
+        }
+        button {
+            font-family: "Minecraft Ten", sans-serif;
+            font-size: 1em;
+            padding: 5px 50px;
+            margin: 10px;
         }
     </style>
 </head>
@@ -51,11 +75,39 @@
 <!-- Elementos: -->
 <body>
     <header>
-        <h1>Bem-vindo a nossa Clínica de Pilates!</h1>
+        <h1>Bem-vindo a nossa Clínica de Pilates</h1>
+        <p>Transformando sua saúde e bem-estar!</p>
     </header>
+    
+    <section>
+        <h2>Agendamento de aulas!</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required><br><br>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+
+            <button type="submit">Agendar!</button>
+        </form>
+    </section>
+    
+    <section>
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo à Clínica de Pilates! Nosso objetivo é proporcionar saúde, equilíbrio e qualidade de vida!</p>
+    </section>
 
     <section>
-        <h2>Sessâo 1 ☺</h2>
+        <h2>Entre em contato</h2>
+        <p>Tire suas dúvidas e saiba mais entrando em contato conosco! Email: clinicadepilatesjma@gmail.com</p>
     </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Clínica de Pilates.</p>
+    </footer>
 </body>
 </html>
