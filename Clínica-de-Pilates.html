@@ -124,6 +124,28 @@
         img:hover {
             transform: scale(1.2);
         }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Vem de baixo */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Posição final */
+                
+            }
+        }
+        section {
+            animation: fadeInUp 0.8s ease-in-out; /* Ajusta o tempo e suavidade */
+            opacity: 0; /* Começa invisível */
+            opacity: 1; /* Visível após a animação */
+        }
+
+        /* Adicionar uma classe dinâmica para ativar a animação */
+        section.fade-in {
+            animation: fadeInUp 0.8s ease-in-out;
+            opacity: 1; /* Visível após a animação */
+        }
     </style>
 </head>
 
